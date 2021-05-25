@@ -1,0 +1,90 @@
+.home-screen{
+    /* border: 1px solid red; */
+    /* height: 680px; */
+    display: flex;
+}
+.side-navigation{
+    width: 30%;
+}
+.mid-screen{
+    width: 70%;
+    height: auto;
+    background-image: url('../../image/Sill-out.jpeg');
+    background-repeat: no-repeat;
+    /* background-size: 100% 680px; */
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    color: #fff;
+    padding: 20px;
+}
+.name{
+    font-size: 25px;
+    text-decoration: underline;
+    text-decoration-color: #007bb5;
+    text-decoration-thickness: 5px;
+    margin: 10px;
+}
+.text-field{
+    font-size: 20px;
+    margin: 0px;
+}
+.footer{
+    display: none;
+}
+@media only screen and (max-width: 400px) {
+    .home-screen{
+        display: flex;
+        flex-flow: row wrap;
+        width: 400px;
+    }
+    .side-navigation{
+        width: 100%;
+        height: 60px;
+    }
+    .mid-screen{
+        width: 100%;
+        height: 100%;
+        margin-top: 0px;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .home-screen{
+        display: flex;
+        flex-flow: row wrap;
+        width: 411px;
+    }
+    .side-navigation{
+        width: 100%;
+        height: 60px;
+    }
+    .mid-screen{
+        width: 411px;
+        height: 100%;
+        margin-top: 0px;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        background-size: 411px 100%;
+    }
+    .footer{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #000000;
+        width: 100%;
+        height: 40px;
+        position: fixed;
+        bottom: 0px;
+        color:#fff;
+    }
+  }
